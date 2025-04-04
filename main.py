@@ -78,4 +78,6 @@ async def handle_message(message: cl.Message):
     )  # Add assistant response to history
     cl.user_session.set("history", history)  # Update session history
 
-    await cl.Message(content=response_text).send()  # Send response to user
+#  send response to user
+    await cl.Message(content=response_text).send() 
+    
