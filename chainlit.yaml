@@ -1,0 +1,21 @@
+chainlit: 2.4.1
+
+# Interface settings
+ui:
+  name: "simpple Chainlit Chatbot"
+  description: "A simple Question Answering Stateful chatbot with GitHub authentication built with Python, UV, and Chainlit."
+
+# Message settings
+default_expand_messages: true
+
+# Auth settings
+auth:
+  required: true
+  providers: 
+    - github
+
+# OAuth Configuration
+oauth_providers:
+  github:
+    client_id: ${OAUTH_GITHUB_CLIENT_ID}
+    client_secret: ${OAUTH_GITHUB_CLIENT_SECRET}
